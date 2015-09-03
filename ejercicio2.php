@@ -10,7 +10,7 @@
 	<!-- Kilometros por hora 8.765.812 * 24 -->
 	<!-- Kilometros por dia 210379488 -->
 	<!-- Total 210379488 * 800 -->
-	<form action="Desarrollo_02.php" method="POST">
+	<form action="desarrollo_02.php" method="POST">
 		 Cantidad de Dias:<br>
   		<input type="text" name="dias" id="dias" value="0">
   		<input type="submit" value="Enviar">
