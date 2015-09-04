@@ -41,7 +41,39 @@ echo "<h3>Digite por favor el Dia, el Mes, el Año </h3>
  
 </form>
   
-      
+ <?php
+ 
+    
+$auxi = 0;
+if(isset($_REQUEST['enviar'])){
+	
+	$dia = $_POST['dia'];
+	$mes = $_POST['mes'];
+	$anio = $_POST['ano'];
+	
+    
+    if($mes == 1 || $mes == 3 || $mes == 5 || $mes == 7 || $mes == 8 || $mes == 10 || $mes == 12){
+		  if($dia <= 31){
+			 $auxi++;
+		}
+	}
+	if( $mes == 4 || $mes == 6 || $mes == 9 || $mes == 11){
+		  if($dia <= 30){
+			$auxi++;
+		}
+	}
+   if( $mes == 2){
+		if($dia <= 28){
+			$auxi++;
+		}
+	}
+	if($auxi == 1){
+		echo  "La fecha ".$dia. "" . $mes. "-".$anio ."es correcta" ;
+	}else{
+		echo  "La fecha ".$dia. "-" . $mes. "-".$anio ."es incorrecta" ;
+	}
+}
+?> 
     
  </body>
 </html>
