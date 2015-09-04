@@ -10,6 +10,11 @@
     <p>A03:  Por medio de un menú dar al usuario la opción de seleccionar círculo o circunferencia si selecciona círculo calcular su área. A=PI*r^2, si selecciona circunferencia calcular su longitud. </p> <br>    
       
         <form id="formularioFigura" name="formularioFigura" action="desarrollo3.php" method="POST">
+            
+            <h2  background:"#000000" >Por Favor digite los Coeficientes  de la operacion  </h2> <br>
+        <label> DIGITE EL RADIO:  <input type='text' name='valor' ></label><br>
+        
+            
            <label><em>Seleccione el tipo de figura que desea conocer:</em>
             <select id="area" name="area">
                 <option value="Circulo">Circulo</option>
